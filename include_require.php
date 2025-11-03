@@ -9,3 +9,8 @@
  include ("form.php");
 ?>
 <hr>
+<?php
+$a="hello";
+echo "Hello" . $a;
+
+?>
