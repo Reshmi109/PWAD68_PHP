@@ -1,0 +1,17 @@
+1. select
+
+SELECT * FROM `customers` WHERE country = 'Germany';
+SELECT * FROM `customers` WHERE country = 'Germany' OR country = 'UK';
+SELECT * FROM `customers` WHERE country = 'Germany' AND city = 'Berline';  //different column
+2.
+select productID, product_name, price FROM products WHERE price>30;
+select productID, product_name, price FROM products WHERE price>=30 AND price<=50;
+select productID, product_name, price FROM products WHERE price BETWEEN 30 AND 50; // between dile and use korte hobe
+3. Order By
+select productID, product_name, price FROM products WHERE price BETWEEN 30 AND 50 ORDER BY product_name;
+select productID, product_name, price FROM products WHERE price BETWEEN 30 AND 50 ORDER BY product_name ASC;  // asending default hoi
+select productID, product_name, price FROM products WHERE price BETWEEN 30 AND 50 ORDER BY product_name DESC;
+4. Insert
+INSERT INTO `person`(`personID`, `Name`) VALUES (101,'Reshmi');
+
+INSERT INTO `person`(`personID`, `Name`) VALUES ('53','Kaniz'), ('54','Fatema'), ('55','Reshma');
