@@ -14,6 +14,10 @@
         $sql="insert into students values(null,'$fname','$lname','$dob','$notes')";
         include_once("db_config2.php");
         $db->query($sql);
+
+        if($db->affected_rows){
+            echo "Inserted";
+        }
     endif;
 
     ?>
@@ -22,7 +26,7 @@
         <input type="text" name="lname" placeholder="Enter last name"> <br> <br>
         <input type="date" name="dob" placeholder="Enter date "> <br> <br>
         <textarea name="notes"></textarea> <br> <br>
-        <input type="submit" name="submit" value="SUBMIT">
+        <input type="submit" name="submit" value="SUBMIT"> <br>
         <a href="students3(table).php">Student List</a>
     </form>
 </body>

@@ -17,7 +17,7 @@
     </style>
 </head>
 <?php 
-$sql="SELECT * FROM students";
+$sql="SELECT * FROM students order by employeeID desc";
 $result=$db->query($sql);  
 //$row=$result->fetch_array(); 
 
